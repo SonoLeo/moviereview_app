@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.head-img {
+  max-width: 300px;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+}
+body {
+  background: linear-gradient(
+    130deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(91, 91, 91, 1) 100%,
+    rgba(255, 229, 0, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.movies {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+
+.movies-card-img {
+  background-color: black;
+  border: solid #f3ce13 3px;
+  height: 500px;
+  width: 300px;
+  object-fit: cover;
+  padding: 8px 16px;
+}
+
+.movies-review img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}

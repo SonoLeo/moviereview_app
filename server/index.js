@@ -19,21 +19,21 @@ app.listen(3001, (req, res) => {
 });
 
 app.get("/movies/", (req, res) => {
-  const query = "SELECT `title`, `review`, `cover`, `vote` FROM movies;";
+  const query = "SELECT * FROM movies;";
   db.query(query, (err, result) => {
     if (err) console.log(err);
     else res.json(result);
   });
 });
 
-app.post("/movies/insert", (req, res) => {
+app.post("/movies/add", (req, res) => {
   const query =
     "INSERT INTO movies(`title`, `review`, `cover`, `vote`) VALUES (?)";
   const values = [
-    "title from client",
-    "review from client",
-    "cover from client",
-    5.0,
+    req.body.title,
+    req.body.review,
+    req.body.cover,
+    req.body.vote,
   ];
   db.query(query, [values], (err, result) => {
     if (err) console.log(err);
