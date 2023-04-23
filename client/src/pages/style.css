@@ -1,0 +1,52 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 2vw;
+}
+
+h1,
+h2 {
+  font-family: "Oswald", sans-serif;
+}
+
+p,
+button,
+input[type="text"],
+input[type="number"],
+textarea {
+  font-family: "Roboto", sans-serif;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 25vw;
+  height: 3vh;
+}
+
+textarea {
+  width: 25vw;
+  height: 40vh;
+  resize: none;
+}
+
+input,
+textarea {
+  font-size: 1.2rem;
+}
+
+.container h1 {
+  color: #f3ce13;
+}
+
+.container button {
+  cursor: pointer;
+  background-color: aliceblue;
+  border: 3px solid #f3ce13;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}

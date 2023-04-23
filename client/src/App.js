@@ -1,8 +1,9 @@
 import { Add } from "./pages/Add";
 import { Edit } from "./pages/Edit";
 import "./App.css";
+import "./pages/style.css";
 import Movies from "./pages/Movies";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Movies />}></Route>
           <Route path="/add" element={<Add />}></Route>
-          <Route path="/edit" element={<Edit />}></Route>
+          <Route path="/edit/:id" element={<Edit />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
